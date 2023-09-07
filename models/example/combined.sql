@@ -1,5 +1,5 @@
 with
-    hubspot as (select * from {{ ref("hubspot_dbt") }}),
+    hubspot as (select * from {{ ref("external_hubspot_customers") }}),
 
     pagerduty as (select * from {{ ref("pagerduty_dbt") }}),
 

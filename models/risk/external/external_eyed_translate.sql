@@ -1,4 +1,4 @@
-{{ config(schema="risk", materialized="table") }}
+{{ config(schema="public", materialized="table") }}
 
 
 select

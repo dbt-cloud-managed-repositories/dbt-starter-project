@@ -1,5 +1,5 @@
 
-{{ config(materialized='view') }}
+{{ config(schema='public',materialized='table') }}
 
 
 select 

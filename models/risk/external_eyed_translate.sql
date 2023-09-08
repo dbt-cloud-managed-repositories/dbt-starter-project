@@ -1,5 +1,5 @@
-{{ config(materialized='view') }}
+{{ config(schema="risk", materialized="table") }}
 
 
-select prod, dev
-from spectrum.eyed_translate 
+select prod as eyed_prd, eyed_dev
+from spectrum.eyed_translate
